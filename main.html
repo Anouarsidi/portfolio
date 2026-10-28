@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahamane Anouar Ibrahim Sidi | Ingénieur Génie-logiciel & DevOps</title>
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    
+</head>
+<body>
+
+
+    <!-- MODAL DETAILS PROJET -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <h3 id="modal-title" class="modal-title">Titre du Projet</h3>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <div class="logo-icon">&lt;/&gt;</div>
+                <div class="logo-text">ANOUAR<span>.SIDI</span></div>
+            </a>
+
+            <nav>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Changer de thème">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <!-- HERO SECTION REDESIGNÉ -->
+        <section id="hero" class="hero">
+            <div class="hero-glow-bg"></div>
+            <div class="container">
+                <div class="hero-grid-modern">
+                    
+                    <!-- Colonne de gauche : Textes & CTA -->
+                    <div class="hero-content-left">
+                        <div class="hero-badge">
+                            <span class="pulse-dot"></span>
+                            <span>Disponible pour vos projets Tech & DevOps</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Ingénierie Logicielle <br>
+                            <span class="accent">& Solutions Scalables</span>
+                        </h1>
+
+                        <div class="typewriter-wrapper">
+                            <span>Expertise :</span>
+                            <span id="typewriter" class="typewriter-text"></span>
+                            <span class="cursor"></span>
+                        </div>
+
+                        <p class="hero-description">
+                            </p>
+
+                        <div class="hero-buttons">
+                            <a href="#realisations" class="btn btn-primary">
+                                <span>Explorer le Portfolio</span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fa-regular fa-paper-plane"></i>
+                               <span>Démarrer un projet</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Colonne de droite : Carte visuelle interactive / Floating Card -->
+                    <div class="hero-visual-right">
+                        <div class="hero-floating-card">
+                            <div class="card-glow-header">
+                                <div class="window-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="card-filename">system_status.sh</span>
+                            </div>
+                            <div class="card-code-content">
+                                <p><span class="code-cmd">root@anouar-server:~$</span> ./deploy-stack.sh</p>
+                                <p class="code-output"><i class="fa-solid fa-check-circle text-success"></i> Web & Mobile Apps : <span class="highlight-ok">ONLINE</span></p>
+                                <p class="code-output"><i class="fa-solid fa-check-circle text-success"></i> DevOps & Linux : <span class="highlight-ok">SECURED</span></p>
+                                <p class="code-output"><i class="fa-solid fa-check-circle text-success"></i> Clean Architecture : <span class="highlight-ok">ACTIVE</span></p>
+                                <p class="code-prompt"><span class="code-cmd">_</span> Prêt pour l'innovation.</p>
+                            </div>
+
+                            <!-- Mini Badge Flottant Superposé -->
+                            <div class="floating-badge-mini">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <div>
+                                    <span class="fb-title">100% Fiabilité</span>
+                                    <span class="fb-sub">Clean Code & DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION A PROPOS -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card-visual">
+                        <div class="code-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span style="font-family: monospace; font-size: 0.8rem; color: var(--text-muted); margin-left: auto;">profile.ts</span>
+                        </div>
+                        <div class="code-body">
+                            <p><span class="code-keyword">const</span> <span class="code-prop">developer</span> = {</p>
+                            <p style="padding-left: 1.5rem;"><span class="code-prop">role</span>: <span class="code-string">'Fullstack Tech Specialist'</span>,</p>
+                            <p style="padding-left: 1.5rem;"><span class="code-prop">expertise</span>: [<span class="code-string">'Apps Web'</span>, <span class="code-string">'Sites web'</span>, <span class="code-string">'Apps Mobile'</span>, <span class="code-string">'Agent IA'</span>, <span class="code-string">'Machine learning'</span>],</p>
+                            <p style="padding-left: 1.5rem;"><span class="code-prop">qualité</span>: <span class="code-string">'Clean Code & Performance'</span>,</p>
+                            <p style="padding-left: 1.5rem;"><span class="code-prop">disponibilité</span>: <span class="code-string">'Imméditate'</span></p>
+                            <p>};</p>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <span class="section-tag">Qui suis-je?</span>
+                        <h3>De la curiosité au monde technologique.</h3>
+                        <p>
+                           Ingénieur polyvalent, je combine expertise en développement, réseau et administration système pour concevoir des architectures complexes et sécurisées. De l'analyse au déploiement en environnements à haute criticité, j'allie rigueur, performance et fiabilité pour donner vie à vos projets.
+                        </p>
+                        <p>
+                            Du développement d'applications mobiles iOS/Android performantes jusqu'aux plateformes web SaaS modulaires, chaque projet est pensé avec soin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION COMPETENCES -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <!-- Titre de la section -->
+                <div class="section-title-wrapper">
+                    <span class="section-tag">STACKS</span>
+                    <h2 class="section-heading">Technologies</h2>
+                </div>
+
+                <!-- Grille des cartes de compétences -->
+                <div class="skills-grid">
+                    <!-- 1. Frontend -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="skill-title">Frontend</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>React</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Angular</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>HTML5 / CSS3 / JS</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Dev. Mobile -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3 class="skill-title">Dev. Mobile</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>React Native / Expo</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Ionic</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Android Studio / Kotlin</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Backend -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="skill-title">Backend</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>Django / Django DRF</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>FastAPI</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>REST API</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Database -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skill-title">Database</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>PostgreSQL / MySQL</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Oracle</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>SQLite / Redis</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 5. OS & Admin Sys -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3 class="skill-title">Systèmes & OS</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>Ubuntu / Ubuntu Server</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Debian</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>CentOS</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Windows Server</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 6. CMS -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-wordpress"></i></div>
+                        <h3 class="skill-title">CMS</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>WordPress</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Joomla</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Moodle</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 7. Intelligence Artificielle -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="skill-title">IA & Automa.</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>Intégration APIs LLM</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Prompt Engineering</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Scripts d'Automation</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+
+                    <!-- 8. Outils Tech -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="skill-title">Outils & DevOps</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item"><span>Git / GitHub</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Docker</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Adobe Photoshop / Illustrator</span> <i class="fa-solid fa-check"></i></li>
+                            <li class="skill-item"><span>Packet Tracer / WireShark</span> <i class="fa-solid fa-check"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Carrousel de logos défilant en dessous des cartes -->
+                <div class="tech-carousel-wrapper">
+                    <div class="tech-track">
+                        <!-- Groupe 1 de Technologies (Images) -->
+                        <div class="tech-card"><img src="static/imgs/stacks/python.webp" alt="Python"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/django.webp" alt="Django"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/drf.webp" alt="Django REST Framework"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/fast.webp" alt="FastAPI"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/pycharm.webp" alt="PyCharm"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/netmiko.webp" alt="Netmiko"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/android.webp" alt="Android Studio"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/Ionic.webp" alt="Ionic"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/wp.webp" alt="WordPress"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/packet.webp" alt="Packet Tracer"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ws.webp" alt="Windows Server"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ubuntu.webp" alt="Ubuntu"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/debian.webp" alt="Debian"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ionos.webp" alt="IONOS"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/lws.webp" alt="LWS"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/hostinger.webp" alt="Hostinger"></div>
+
+                        <!-- Groupe 2 (Duplicata identique pour la boucle fluide sans coupure) -->
+                        <div class="tech-card"><img src="static/imgs/stacks/python.webp" alt="Python"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/django.webp" alt="Django"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/drf.webp" alt="Django REST Framework"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/fast.webp" alt="FastAPI"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/pycharm.webp" alt="PyCharm"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/netmiko.webp" alt="Netmiko"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/android.webp" alt="Android Studio"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/Ionic.webp" alt="Ionic"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/wp.webp" alt="WordPress"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/packet.webp" alt="Packet Tracer"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ws.webp" alt="Windows Server"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ubuntu.webp" alt="Ubuntu"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/debian.webp" alt="Debian"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/ionos.webp" alt="IONOS"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/lws.webp" alt="LWS"></div>
+                        <div class="tech-card"><img src="static/imgs/stacks/hostinger.webp" alt="Hostinger"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CERTIFICATIONS -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">ACCRÉDITATIONS</span>
+                    <h2 class="section-heading">Certifications</h2>
+                </div>
+
+                <!-- Grille des Certifications -->
+                <div class="certifications-grid">
+                    
+                    <!-- Carte Certification 1 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <img src="static/imgs/stacks/alsion.webp" alt="Logo Alison" class="cert-logo">
+                            <div>
+                                <span class="cert-issuer">Délivrée par ALISON</span>
+                                <h3 class="cert-title-name">PROJECT MANAGEMENT</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <a href="static/certifications/Alison_Diploma-PM.pdf" download class="btn btn-secondary cert-btn" title="Télécharger le certificat">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Certificat</span>
+                            </a>
+                            <a href="https://alison.com/certification/check/c6d4a721a2" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-btn" title="Vérifier le badge en ligne">
+                                <span>Vérifier</span>
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <img src="static/imgs/stacks/alsion.webp" alt="Logo Alison" class="cert-logo">
+                            <div>
+                                <span class="cert-issuer">Délivrée par ALISON</span>
+                                <h3 class="cert-title-name">SOFTWARE PROJECT MANAGEMENT</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <a href="#" download class="btn btn-secondary cert-btn" title="Télécharger le certificat">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Certificat</span>
+                            </a>
+                            <a href="https://alison.com/certification/check/4e4fbd669f" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-btn" title="Vérifier le badge en ligne">
+                                <span>Vérifier</span>
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <img src="static/imgs/stacks/alsion.webp" alt="Logo Alison" class="cert-logo">
+                            <div>
+                                <span class="cert-issuer">Délivrée par ALISON</span>
+                                <h3 class="cert-title-name">AGILE PROJECT MANAGEMENT</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <a href="#" download class="btn btn-secondary cert-btn" title="Télécharger le certificat">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Certificat</span>
+                            </a>
+                            <a href="https://alison.com/certification/check/d865f7f10f" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-btn" title="Vérifier le badge en ligne">
+                                <span>Vérifier</span>
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Carte Certification 2 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <img src="static/imgs/stacks/alsion.webp" alt="Logo Alison" class="cert-logo">
+                            <div>
+                                <span class="cert-issuer">Délivrée par ALISON</span>
+                                <h3 class="cert-title-name">AI & ML IN BUSINESS</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <a href="static/certifications/Alison_Certificate-AI in business.pdf" download class="btn btn-secondary cert-btn" title="Télécharger le certificat">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Certificat</span>
+                            </a>
+                            <a href="https://alison.com/certification/check/a3a8025460" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-btn" title="Vérifier le badge en ligne">
+                                <span>Vérifier</span>
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Carte Certification 3 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <img src="static/imgs/stacks/comtel.webp" alt="Logo Comtel" class="cert-logo">
+                            <div>
+                                <span class="cert-issuer">Délivrée par COMTEL</span>
+                                <h3 class="cert-title-name">Formation CCNA</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <a href="static/certifications/ccna.pdf" download class="btn btn-secondary cert-btn">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Certificat</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+      <!-- SECTION STATISTIQUES (CHIFFRES CLES REDESIGNÉS) -->
+        <section class="stats">
+            <div class="stats-glow-bg"></div>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="stat-number" data-target="20">0</div>
+                        <div class="stat-label">Projets Réalisés</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-code-merge"></i>
+                        </div>
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Ans d'Expérience</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Satisfaction Client</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Support 24/7</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION REALISATIONS (PROJETS) -->
+        <section id="realisations" class="projects">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">PORTFOLIO</span>
+                    <h2 class="section-heading">Réalisations</h2>
+                </div>
+
+                <!-- Filtres -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="web">Dev. Web</button>
+                    <button class="filter-btn" data-filter="mobile">Dev. Mobile</button>
+                    <button class="filter-btn" data-filter="siteweb">Sites Web & CMS</button>
+                </div>
+
+                <!-- Grille de Projets -->
+                <div class="projects-grid">
+                    <!-- Projets (Web) -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/camp.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Camp d'Excellence d'Agadez</h3>
+                            <p class="project-description">Déploiement de la plateforme.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Django / Django DRF</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://campdexcellenceaz.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/abincin.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">#ABINCIN'NIGER 2026</h3>
+                            <p class="project-description">Conception, développement et déploiement de la plateforme de gestion évènementielle.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://abincin.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/ADA.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Agence ADA</h3>
+                            <p class="project-description">Déploiement de la plateforme d'orientation du cabinet.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / JS</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://cabinet-adaholding.com/" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/iqra.jpg" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cabinet IQRA</h3>
+                            <p class="project-description">Déploiement de la plateforme d'orientation du cabinet.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('iqra')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/alphasimo.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Alphasimo</h3>
+                            <p class="project-description">Déploiement de la plateforme de formation du cabinet.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / JS</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://alphasimo.com/" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/CVQR.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CVQR</h3>
+                            <p class="project-description">Conception, développement et déploiement de la platforme de vCV, des CVs qui sont en lignes et qui peuvent êtres consultés par scannage du QR code.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('cvqr')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/eiman.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">e-IMAN</h3>
+                            <p class="project-description">Plateforme de gestion globale des globales des services de l'entreprise</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django / Django DRF</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('eiman')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/klara.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Klara</h3>
+                            <p class="project-description">Plateforme de contrôle et de suivi de la consommation d'électricité des compteurs HASKE de la Nigelec.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('klara')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/ntmag.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">NTMAG</h3>
+                            <p class="project-description">Plateforme de gestion des mouvements magasins de Niger-Telecoms (entrées, sorties, retours, commandes, etc...)</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Oracle</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('ntmag')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/reso.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">e-RES'O</h3>
+                            <p class="project-description">Plateforme de gestion des panneaux publicitaires.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">Geolocation / Leaflet</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('ereso')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/ged.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Iman GED</h3>
+                            <p class="project-description">Déploiement de la plateforme</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Django / Django DRF</span>
+                                <span class="tech-badge"></span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('ged')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/ged.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">e-Supply</h3>
+                            <p class="project-description">Déploiement et maintenance de la plateforme.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">JAVA / Spring Boot</span>
+                                <span class="tech-badge"></span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('esupply')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/imanqr.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ImanQR</h3>
+                            <p class="project-description">Plateforme de génération de QR codes (site web, whatsapp, téléphone, etc...).</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('imanqr')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Web</span>
+                            <img src="static/imgs/projects/web/tracker.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tracker</h3>
+                            <p class="project-description">Plateforme de gestion de projets.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                                <span class="tech-badge">Django</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('tracker')">
+                                <span>Voir les détails</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Projets (Mobile) -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Dev. Mobile</span>
+                            <img src="static/imgs/projects/datapulse.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Borne de pointage electronique</h3>
+                            <p class="project-description">Application mobile de pointage basée sur les Qr code et la reconnaissance faciale.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Android Studio / Kotlin</span>
+                                <span class="tech-badge">IA</span>
+                            </div>
+                            <button class="project-footer-btn" onclick="openModal('pointeuse')">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Projets (Site Web) -->
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/kokowa26.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">#Kokowa2026</h3>
+                            <p class="project-description">Tableau de bord interactif d'analyse de données financières en temps réel avec graphiques interactifs.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Wordpress</span>
+                            </div>
+                            <a class="project-footer-btn" href="http://kokowa.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/kokowa25.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">#Kokowa2025</h3>
+                            <p class="project-description">Tableau de bord interactif d'analyse de données financières en temps réel avec graphiques interactifs.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Wordpress</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://kokowa.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/iman.jpg" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">IMAN</h3>
+                            <p class="project-description">Site web de l'Agence de communication 360° de Communication IMAN SURL.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Wordpress</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://iman.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/imandigital.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Iman Digital</h3>
+                            <p class="project-description">Site web de présentation de la branche digitale de la société IMAN SURL.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Wordpress</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://digital.iman.ne/" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/Tinga.webp" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tinga Immobilier</h3>
+                            <p class="project-description">Site web de lA société immobilière Tinga Immobilier.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">Wordpress</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://tingaimmobilier.net/" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/moussa gros.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Moussa Gros</h3>
+                            <p class="project-description">Site web en hommage du pionnier Moussa Gros.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS</span>
+                                <span class="tech-badge">Node.js</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://mg.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/mec.jpg" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MEC</h3>
+                            <p class="project-description">Administration du site web de l'agence Management for Entreprise Consult.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Chart.js</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://mec.ne" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="siteweb">
+                        <div class="project-image-wrapper">
+                            <span class="project-category-badge">Site Web</span>
+                            <img src="static/imgs/projects/websites/HELIUM.png" alt="DataPulse SaaS Analytics" class="project-visual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Helium Vecteur</h3>
+                            <p class="project-description">Déploiement et maintenance correctives du site de l'entreprise Helium Vecteur.</p>
+                            <div class="project-tags">
+                                <span class="tech-badge">HTML / CSS / JS</span>
+                            </div>
+                            <a class="project-footer-btn" href="https://helium-vecteur.net/" target="_blank" rel="noopener noreferrer">
+                                <span>Visiter</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION CONTACT -->
+        <!-- SECTION CONTACT REDESIGNÉE (SANS FORMULAIRE) -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tag">CONTACT</span>
+                    <h2 class="section-heading">Démarrons votre Projet</h2>
+                    <p class="section-subtitle">Une idée, un projet ou une opportunité ? Discutons-en directement.</p>
+                </div>
+
+                <!-- Grille des cartes de contact direct -->
+                <div class="contact-cards-grid">
+                    
+                    <!-- Carte Email -->
+                    <div class="contact-direct-card">
+                        <div class="contact-icon-box">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email Professionnel</span>
+                            <div class="contact-value-wrapper">
+                                <a href="mailto:anouarsidisbrahim14@gmail.com" class="contact-link">anouarsidisbrahim14@gmail.com</a>
+                                <button class="copy-btn" onclick="copyEmail('anouarsidisbrahim14@gmail.com')" title="Copier l'email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte Téléphone -->
+                    <div class="contact-direct-card">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Téléphone / WhatsApp</span>
+                            <p class="contact-value">+227 80 57 80 83</p>
+                            <p class="contact-subvalue">+227 96 34 37 38</p>
+                        </div>
+                    </div>
+
+                    <!-- Carte Localisation -->
+                    <div class="contact-direct-card">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Localisation</span>
+                            <p class="contact-value">Niamey - Niger</p>
+                            <p class="contact-subvalue">Disponible en International (Remote)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bloc d'action rapide / Call to Action central -->
+                <div class="contact-cta-banner">
+                    <div class="cta-banner-content">
+                        <h3>Prêt à concrétiser votre vision numérique ?</h3>
+                        <p>Je réponds généralement en moins de 24 heures pour toute demande de collaboration.</p>
+                    </div>
+                    <a href="mailto:anouarsidisbrahim14@gmail.com" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Envoyer un message direct</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>© 2026 ANOUAR.SIDI. Tous droits réservés.</div>
+            <div></div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // ==========================================
+        // 1. SYSTEME DE THEME (DARK / LIGHT MODE)
+        // ==========================================
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeIcon.className = newTheme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        });
+
+        // ==========================================
+        // 2. EFFET TYPEWRITER (MACHINE A ECRIRE)
+        // ==========================================
+        const roles = ["Agent IA", "Machine Learning", "Développement Web", "Développement Mobile", "Création de Sites Web"];
+        let roleIdx = 0;
+        let charIdx = 0;
+        let isDeleting = false;
+        const typewriterEl = document.getElementById('typewriter');
+
+        function type() {
+            const currentRole = roles[roleIdx];
+            
+            if (isDeleting) {
+                typewriterEl.textContent = currentRole.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                typewriterEl.textContent = currentRole.substring(0, charIdx + 1);
+                charIdx++;
+            }
+
+            let speed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIdx === currentRole.length) {
+                speed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIdx === 0) {
+                isDeleting = false;
+                roleIdx = (roleIdx + 1) % roles.length;
+                speed = 500;
+            }
+
+            setTimeout(type, speed);
+        }
+        type();
+
+        // ==========================================
+        // 3. FILTRE DES PROJETS
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            // --- ÉTAPE CLÉ : Afficher uniquement le "web" par défaut au chargement ---
+            projectCards.forEach(card => {
+                if (card.getAttribute('data-category') === 'web') {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';
+                } else {
+                    card.style.display = 'none';
+                    card.style.opacity = '0';
+                }
+            });
+
+            // --- Gestion des clics sur les boutons de filtre ---
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Retirer la classe active de tous les boutons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Ajouter la classe active sur le bouton cliqué
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (cardCategory === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => { card.style.opacity = '1'; }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => { card.style.display = 'none'; }, 300); // Temps de transition optionnel
+                        }
+                    });
+                });
+            });
+        });
+
+        // ==========================================
+        // 4. MODALE DE DETAILS DES PROJETS
+        // ==========================================
+        const modalData = {
+            'iqra': {
+                title: 'Plateforme IQRA',
+                desc: 'Plateforme d\'orientation du Cabinet IQRA. Permet aux candidats de soummissionner aux bourses ou de postuler pour une école/université à l\'international et suivre l\'évolution de leurs dossiers.',
+                features: ['Inscription et suivi dossier 100% via la plateforme', 'Exportation de rapports PDF/CSV', 'Réservation de rendez-vous (Appel ou en présentiel)', 'Chat de discussion']
+            },
+            'cvqr': {
+                title: 'EmploiQR',
+                desc: 'Application de CV virtuel accessible par un simple scan du QR code',
+                features: ['Technologie QR intégrée']
+            },
+            'eiman': {
+                title: 'e-IMAN',
+                desc: 'Plateforme de gestion compléte des processus de travail de l\'agence.',
+                features: ['Gestion des fiches de création', 'Tracking de pointage', 'Gestion des demandes d\'achat', 'Gestion des permissions / congés', 'Reporting', 'Export PDF']
+            },
+            'klara': {
+                title: 'Klara',
+                desc: 'Application de suivi de la consommation journalière / mensuelle d\'électricité des compteurs HASKE de la Nigelec.',
+                features: ['Suivi de plusiseurs compteurs', 'Suivi de la consommation électrique de chaque équipement']
+            },
+            'ntmag': {
+                title: 'NTMAG',
+                desc: 'Plateforme globale de gestion des mouvements magasin de Niger-Telecoms à l\'echelle Nationale.',
+                features: ['Bons de sortie', 'Approvisionnement', 'Workflow de validation', 'Suivi des produits GSM', 'Reporting', 'Export PDF et EXCEL']
+            },
+            'ereso': {
+                title: 'e-RES\'O',
+                desc: 'Plateforme de gestion des panneau publicitaire de l\'agence IMAN SURL',
+                features: ['Module de réservation des panneaux', 'Géolocalisation des panneaux', 'Suivi des campagne', 'Planning des maintenances', 'Export PDF et EXCEL']
+            },
+            'ged': {
+                title: 'GED',
+                desc: 'Plateforme de Gestion électronique des documents',
+                features: ['OCR des documents', 'Oragnisation piloté par IA', 'Imputation intelligente des documents']
+            },
+            'esupply': {
+                title: 'e-Supply',
+                desc: 'Refonte complète pour un restaurant gastronomique avec intégration d\'un système de réservation directe.',
+                features: ['Module de réservation de table sans frais', 'Carte des menus interactive', 'Design luxe responsive']
+            },
+            'imanqr': {
+                title: 'ImanQR',
+                desc: 'Application de création de QR code.',
+                features: ['Whatsapp', 'Facebook', 'Téléphone', 'Lien', 'Historique des QR codes créés']
+            },
+            'tracker': {
+                title: 'Tracker',
+                desc: 'Plateforme de tracking des projets.',
+                features: ['Affectation de tâches', 'Système de note', 'Etat d\'évolution']
+            },
+            'pointeuse': {
+                title: 'Pointeuse Electronique',
+                desc: 'Refonte complète pour un restaurant gastronomique avec intégration d\'un système de réservation directe.',
+                features: ['Réponse vocal du pointage', 'QR + FaceID']
+            }
+        };
+
+        const modal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+
+        function openModal(id) {
+            const data = modalData[id];
+            if (!data) return;
+
+            modalTitle.textContent = data.title;
+            modalBody.innerHTML = `
+                <p>${data.desc}</p>
+                <div class="modal-section-title">Fonctionnalités Clées</div>
+                <ul class="modal-features">
+                    ${data.features.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join('')}
+                </ul>
+            `;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // ==========================================
+        // 5. TOAST & COPIE EMAIL
+        // ==========================================
+        function showToast(msg) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color:#10b981;"></i> <span>${msg}</span>`;
+            
+            container.appendChild(toast);
+            
+            setTimeout(() => toast.classList.add('show'), 10);
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function copyEmail(email) {
+            const input = document.createElement('input');
+            input.value = email;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            showToast('Adresse email copilée !');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Message envoyé avec succès !');
+            e.target.reset();
+        }
+
+        // ==========================================
+        // 6. COMPTEURS ANIMES
+        // ==========================================
+        const counters = document.querySelectorAll('.stat-number');
+        let animated = false;
+
+        window.addEventListener('scroll', () => {
+            const statsEl = document.querySelector('.stats');
+            if (!statsEl) return;
+            
+            const pos = statsEl.getBoundingClientRect();
+
+            if (pos.top < window.innerHeight && !animated) {
+                animated = true;
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const speed = target / 30;
+
+                    const update = () => {
+                        count += speed;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count) + (target === 100 ? '%' : '+');
+                            setTimeout(update, 40);
+                        } else {
+                            counter.innerText = target + (target === 100 ? '%' : '+');
+                        }
+                    };
+                    update();
+                });
+            }
+        });
+
+        // ==========================================
+        // 7. MENU MOBILE TOGGLE
+        // ==========================================
+        const mobileToggleBtn = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileToggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => navMenu.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>
